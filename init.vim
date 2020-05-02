@@ -17,6 +17,10 @@ if has('python2')
     Plug 'Rykka/riv.vim'
 endif
 
+" Status bar
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 "-------------
 " Plugin end
 call plug#end()
@@ -39,3 +43,10 @@ filetype plugin indent on
 syntax on
 set number
 
+" Airline
+let g:airline_theme = 'gruvbox'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#buffer_nr_format = '%s:'
