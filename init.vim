@@ -27,6 +27,9 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'do': 'bash install.sh',
     \ }
 
+" jedi(autocompletion...)
+Plug 'davidhalter/jedi-vim'
+
 "-------------
 " Plugin end
 call plug#end()
@@ -71,3 +74,13 @@ nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+
+" Jedi-vim
+let g:jedi#goto_command = "<leader>d"
+let g:jedi#goto_assignments_command = "<leader>g"
+let g:jedi#goto_stubs_command = "<leader>s"
+let g:jedi#goto_definitions_command = ""
+let g:jedi#documentation_command = "K"
+let g:jedi#usages_command = "<leader>n"
+let g:jedi#completions_command = "<C-Space>"
+let g:jedi#rename_command = "<leader>r"
