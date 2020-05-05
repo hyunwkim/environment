@@ -29,6 +29,7 @@ let mapleader=','
 
 " FZF
 map <leader>F :Files<CR>
+map <leader>R :Rg<CR>
 let g:fzf_preview_window = 'right:60%'
 command! -bang -nargs=? -complete=dir Files
     \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
@@ -44,8 +45,8 @@ syntax on
 set number
 
 " Airline
-let g:airline_theme = 'gruvbox'
-let g:airline_powerline_fonts = 1
+let g:airline_theme = 'base16_gruvbox_dark_hard'
+let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#buffer_nr_show = 1
