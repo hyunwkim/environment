@@ -65,7 +65,7 @@ let g:jedi#goto_stubs_command = "<leader>s"
 let g:jedi#goto_definitions_command = ""
 let g:jedi#documentation_command = "K"
 let g:jedi#usages_command = "<leader>u"
-let g:jedi#completions_command = "<C-Space>"
+let g:jedi#completions_command = "<Tab>"
 let g:jedi#rename_command = "<leader>r"
 
 " NerdTree
